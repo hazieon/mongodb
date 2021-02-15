@@ -1,10 +1,11 @@
+require("dotenv").config();
 var Poem = require("./poem.model");
 var express = require("express");
 var app = express();
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 const e = require("express");
-require("dotenv").config();
+
 const { readSync } = require("fs");
 
 var PORT = process.env.port;
